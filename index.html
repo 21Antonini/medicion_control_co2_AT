@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medición y control de CO2</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="sidenav-trigger">
+        <div class="nav-wrapper blue darken-3">
+          <a href="index.html" class="brand-logo center">Medición y control de CO2</a>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <section class="text-container">
+        <h1 class="title">Olimpiadas 2021 - E.E.S.T N°6 Albert Thomas</h1>
+      </section>
+      <section class="ambientes">
+        <div class="row">
+          <div class="col s12">
+            <div class="card grey lighten-4">
+              <div class="card-content black-text distribucion">
+                <div class="ambientes_container">
+                  <div class="ambiente-style-box" id="amb1-state"><h5>1</h5></div>
+                  <div class="ambiente-style-box" id="amb2-state"><h5>2</h5></div>
+                  <div class="ambiente-style-box" id="amb3-state"><h5>3</h5></div>
+                  <div class="ambiente-style-box" id="amb4-state"><h5>4</h5></div>
+                  <div class="ambiente-style-box" id="amb5-state"><h5>5</h5></div>
+                  <div class="ambiente-style-box" id="amb6-state"><h5>6</h5></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="registro">
+        <div class="row">
+          <div class="col s12">
+            <div class="card grey lighten-4">
+              <div class="card-content black-text">
+                <nav class="nav-extended">
+                  <div class="nav-content blue darken-3">
+                    <ul class="tabs tabs-transparent">
+                      <li class="tab"><a id="amb1">Ambiente 1</a></li>
+                      <li class="tab"><a id="amb2"">Ambiente 2</a></li>
+                      <li class="tab"><a id="amb3"">Ambiente 3</a></li>
+                      <li class="tab"><a id="amb4"">Ambiente 4</a></li>
+                      <li class="tab"><a id="amb5"">Ambiente 5</a></li>
+                      <li class="tab"><a id="amb6"">Ambiente 6</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <table class="responsive-table">
+                  <thead>
+                    <tr>
+                      <th>Dia</th>
+                      <th>Hora</th>
+                      <th>Status</th>
+                      <th>CO2</th>
+                      <th>ID Sensor</th>
+                    </tr>
+                  </thead>
+
+                  <tbody class="table"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="src/script/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
